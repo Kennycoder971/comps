@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Button from "./components/Button";
+import { GoArchive } from "react-icons/go";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Button primary>
+          {" "}
+          <GoArchive /> hi there
+        </Button>
+      </div>
+      <div>
+        <Button secondary>hi there</Button>
+      </div>
+      <div>
+        <Button success rounded>
+          hi there
+        </Button>
+      </div>
+      <div>
+        <Button warning outline>
+          hi there
+        </Button>
+      </div>
+      <div>
+        <Button danger>hi there</Button>
+      </div>
     </div>
   );
 }
