@@ -6,7 +6,6 @@ function ButtonPage() {
     <div className="App">
       <div>
         <Button primary>
-          {" "}
           <GoArchive /> hi there
         </Button>
       </div>
